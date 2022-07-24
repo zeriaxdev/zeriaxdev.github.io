@@ -32,9 +32,9 @@ Currently I'm mostly working on [libreMayk](https://github.com/libreMayk), an un
 
 ---
 
-**PGP key**: [BCBABB78F7DE58DF](storage/zeriax.asc)
+**PGP key**: [BCBABB78F7DE58DF](zeriax.asc)
 
-**SSH keys:** [view here](storage/sshpub.txt)
+**SSH keys:** [view here](sshpub.txt)
 
 **github:** [zeriaxdev](https://github.com/zeriaxdev)
 
