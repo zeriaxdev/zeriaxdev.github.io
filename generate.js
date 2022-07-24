@@ -24,7 +24,7 @@ const aboutHtml = pug.renderFile("./views/about.pug", {
   about,
 });
 
-fs.writeFileSync("./docs/about", aboutHtml);
+fs.writeFileSync("./docs/about.html", aboutHtml);
 
 // Frontpage
 if (frontpage.exists()) {
@@ -49,7 +49,7 @@ const blogHtml = pug.renderFile("./views/list.pug", {
   about,
 });
 
-fs.writeFileSync("./docs/blog", blogHtml);
+fs.writeFileSync("./docs/blog.html", blogHtml);
 
 // Individual articles and files
 console.log(`Generating pages for ${articles.list().length} articles...`);
