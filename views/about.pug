@@ -1,6 +1,11 @@
 html
   head
     include includes/head.pug
+  style
+      include assets/index.css
   body
     include includes/header.pug
-    div(class="container")!= content
+    div(class="container")
+      div(class="onload")!= content
+      hr
+      include includes/end.pug

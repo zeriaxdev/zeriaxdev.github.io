@@ -1,9 +1,12 @@
 html
   head
     include includes/head.pug
+  style
+      include assets/index.css
   body
     include includes/header.pug
     article(class="container")
-      h1= title
-      div!= content
-      hr
+      div(class="onload")
+        h1= title
+        div!= content
+        hr

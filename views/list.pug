@@ -1,11 +1,15 @@
 html
   head
     include includes/head.pug
+  style
+      include assets/index.css
   body
     include includes/header.pug
     article(class="container")
-      each article in articles
-        a(href=article.name)
-          h2 !{article.name}
-        i= article.caption
-        hr
+      div(class="onload")
+        each article in articles
+          a(href=article.name)
+            h2 !{article.name}
+          i= article.caption
+          hr
+        include includes/end.pug

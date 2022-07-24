@@ -1,13 +1,8 @@
 div(class="container") 
-  div(class="terminal-nav")
-    div(class="terminal-logo terminal-prompt")
-      a(class="no-style", href="index.html")=info.title 
-    nav(class="terminal-menu")
-      ul
-        li
-          a(class="menu-item", href="index.html") Home
-        li
-          a(class="menu-item", href="blog.html") Blog
-        if about
-          li
-            a(class="menu-item", href="about.html") About
+  div(class="navbar")
+    div(class="navleft terminal-prompt")
+      a(href="/")=info.title 
+    div()
+      a(class="switch" href="/about.html") about/
+      a(class="switch" href="/blog.html") blog/
+      a(class="switch" href="/") ~/
