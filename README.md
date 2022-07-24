@@ -1,3 +1,3 @@
-# my website
+# my amazing website
 
 please don't read this
