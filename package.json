@@ -1,21 +1,21 @@
 {
-  "name": "zeriax-website",
-  "description": "zeriax's internet corner",
-  "version": "1.0.0",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RoyTakanen/HimosCMS.git"
-  },
-  "author": "zeriaxdev",
-  "license": "AGPL-3.0-or-later",
-  "dependencies": {
-    "commonmark": "^0.30.0",
-    "express": "^4.17.2",
-    "pug": "^3.0.2",
-    "showdown": "^1.9.1"
-  }
+    "name": "zeriax-website",
+    "description": "zeriax's internet corner",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "dev": "node app.js",
+        "generate": "node generate.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zeriaxdev/zeriaxdev.github.io"
+    },
+    "author": "zeriaxdev",
+    "dependencies": {
+        "commonmark": "^0.30.0",
+        "express": "^4.17.2",
+        "pug": "^3.0.2",
+        "showdown": "^1.9.1"
+    }
 }

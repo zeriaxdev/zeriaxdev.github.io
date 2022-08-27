@@ -1,8 +1,11 @@
 html
   head
     include includes/head.pug
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js')
+    script.
+      hljs.highlightAll()
   style
-      include assets/index.css
+    include assets/index.css
   body
     include includes/header.pug
     article(class="container")

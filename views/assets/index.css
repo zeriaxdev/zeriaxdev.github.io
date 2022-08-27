@@ -2,31 +2,34 @@
   --global-font-size: 15px;
   --global-line-height: 1.4em;
   --global-space: 10px;
-  --font-stack: "IBM Plex Mono", Menlo, Monaco, Lucida Console, Liberation Mono,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  --mono-font-stack: "IBM Plex Mono", Menlo, Monaco, Lucida Console,
+  --font-stack: "IBM Plex Mono", "Caskaydia Cove", Menlo, Monaco, Lucida Console,
     Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
     monospace, serif;
-  --background-color: #1d1d1d;
+  --mono-font-stack: "IBM Plex Mono", "Caskaydia Cove", Menlo, Monaco,
+    Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+    Courier New, monospace, serif;
+  --background-color: #282828;
   --page-width: 60em;
-  --font-color: #dedede;
+  --font-color: #ebdbb2;
   --invert-font-color: var(--background-color);
-  --primary-color: #ff4281;
-  --secondary-color: #ff4281;
-  --error-color: #ff4281;
+  --primary-color: #b8bb26;
+  --secondary-color: #b8bb26;
+  --selection-color: #98971a;
+  --error-color: #b8bb26;
   --progress-bar-background: #282828;
-  --progress-bar-fill: #1d1d1d;
+  --progress-bar-fill: #282828;
   --code-bg-color: #242424;
-  --blockquote-color: #6e6e6e;
-  --green-color: #4e8353;
-  --table-color: #7b7b7b;
+  --shadow-color: #242424;
+  --blockquote-color: #665c54;
+  --green-color: #5a5a23;
+  --table-color: #665c54;
   --input-style: solid;
   --display-h1-decoration: none;
 }
 
 html,
 body {
-  background-color: #1d1d1d;
+  background-color: var(--background-color);
   height: 100%;
   font-weight: 500;
 }
@@ -37,12 +40,12 @@ body {
 }
 
 ::-moz-selection {
-  background: var(--primary-color);
+  background: var(--selection-color);
   color: var(--invert-font-color);
 }
 
 ::selection {
-  background: var(--primary-color);
+  background: var(--selection-color);
   color: var(--invert-font-color);
 }
 
@@ -72,7 +75,7 @@ a {
 }
 
 a:hover {
-  background-color: var(--primary-color);
+  background-color: var(--selection-color);
   color: var(--font-color);
   font-style: italic;
   border-radius: 5px;
@@ -184,8 +187,15 @@ code {
 code::after,
 code::before {
   color: var(--blockquote-color);
-  content: " :: ";
   display: inline;
+}
+
+code::after {
+  content: " ::";
+}
+
+code::before {
+  content: ":: ";
 }
 
 pre code::after,
@@ -206,11 +216,13 @@ pre {
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   border-radius: 5px;
+  box-shadow: 0px 10px 10px 2px var(--shadow-color);
 }
 
-pre code {
+pre code,
+pre code.hljs {
   overflow-x: scroll;
-  padding: 2px 7px 0 7px;
+  padding: 0.7rem;
   margin: 0;
   display: inline-block;
   min-width: 100%;
@@ -650,6 +662,7 @@ h1 {
 .container {
   max-width: var(--page-width);
 }
+
 .container {
   margin: 0 auto;
   padding: 0 calc(var(--global-space) * 2);
@@ -737,7 +750,6 @@ h1 {
     display: block;
     width: 100%;
   }
-
   pre::-webkit-scrollbar {
     height: 3px;
   }
@@ -760,4 +772,106 @@ figure {
 figure > figcaption {
   color: var(--secondary-color);
   text-align: center;
+}
+
+code.hljs {
+  padding: 3px 5px;
+}
+
+.hljs {
+  color: #d5c4a1;
+  background: var(--code-bg-color);
+}
+
+.hljs-comment {
+  color: #665c54;
+}
+
+.hljs-tag {
+  color: #bdae93;
+}
+
+.hljs-operator,
+.hljs-punctuation,
+.hljs-subst {
+  color: #d5c4a1;
+}
+
+.hljs-operator {
+  opacity: 0.7;
+}
+
+.hljs-bullet,
+.hljs-deletion,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #fb4934;
+}
+
+.hljs-attr,
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-symbol,
+.hljs-variable.constant_ {
+  color: #fe8019;
+}
+
+.hljs-class .hljs-title,
+.hljs-title,
+.hljs-title.class_ {
+  color: #fabd2f;
+}
+
+.hljs-strong {
+  font-weight: 700;
+  color: #fabd2f;
+}
+
+.hljs-addition,
+.hljs-code,
+.hljs-string,
+.hljs-title.class_.inherited__ {
+  color: #b8bb26;
+}
+
+.hljs-built_in,
+.hljs-doctag,
+.hljs-keyword.hljs-atrule,
+.hljs-quote,
+.hljs-regexp {
+  color: #8ec07c;
+}
+
+.hljs-attribute,
+.hljs-function .hljs-title,
+.hljs-section,
+.hljs-title.function_,
+.ruby .hljs-property {
+  color: #83a598;
+}
+
+.diff .hljs-meta,
+.hljs-keyword,
+.hljs-template-tag,
+.hljs-type {
+  color: #d3869b;
+}
+
+.hljs-emphasis {
+  color: #d3869b;
+  font-style: italic;
+}
+
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-meta .hljs-string {
+  color: #d65d0e;
+}
+
+.hljs-meta .hljs-keyword,
+.hljs-meta-keyword {
+  font-weight: 700;
 }
