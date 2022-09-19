@@ -9,8 +9,8 @@ I also like making _Discord bots_, and have a plenty of experience in that.
 
 ## My favourite programming languages
 
-- **TypeScript** (and _maybe_ JavaScript)
-- **Rust** (still learning it)
+- **TypeScript** (_not_ JavaScript)
+- **Rust** (learning it)
 - **Python**
 
 ## My projects
