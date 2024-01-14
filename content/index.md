@@ -1,42 +1,20 @@
 # About
 
-Terve! I'm **zeriax**, and you found my little Internet corner! I really love
+Terve! I'm **zeriax**, and you found my little internet corner! I really love
 **[free software](https://en.wikipedia.org/wiki/Free_software)** and programming.
-I also love **_Linux_**, and my daily-drive distro is **_Arch Linux_**.
-I also like making _Discord bots_, and have a plenty of experience in that.
+I use **Arch Linux** as a daily-drive Linux distro but dualboot between it and Windows to run games (too lazy to modify shit).
+Sometimes enjoy messing around with Discord's API and bots.
 
 ---
 
-## My favourite programming languages
+## Fav programming languages
 
-- **TypeScript** (_not_ JavaScript)
-- **Rust** (learning it)
+- **TypeScript** (cuz better than JavaScript)
+- **Rust** (learning)
+- **Go** (pretty cool lang)
 - **Python**
 
-## My projects
-
-Currently I'm mostly working on [libreMayk](https://github.com/libreMayk), an unofficial project of bringing **FOSS** to Maunulan yhteiskoulu.
-
-- **WIP** **[maykbot-ts](https://github.com/libreMayk/maykbot-ts)** >> a **libreMayk** Discord bot, includes food menu, mayk.fi calendar and HSL data
-- **[ruoka-rs](https://github.com/libreMayk/ruoka-rs)** >> a _blazingly fast_ CLI tool to fetch the menu from mayk.fi website, written in Rust
-
-### Other projects:
-
-- **[moldifier](https://github.com/zeriaxdev/moldifier)** >> a tool to quickly _moldify_ your own videos
-- **[wikibot](https://github.com/zeriaxdev/wikibot)** >> a Wikipedia Discord bot using the Wikipedia API
-- **[archrice](https://github.com/zeriaxdev/archrice)** >> my Arch setup config files
-
-## Blog
-
-**[Here](blog)** I will share my thoughts about programming & tech, Linux and maaaybe a little (just a little) bit of _politics_.
-
 ---
-
-**PGP key**: [BCBABB78F7DE58DF](zeriax.asc)
-
-**SSH keys:** [view here](sshpub.txt)
-
-**github:** [zeriaxdev](https://github.com/zeriaxdev)
 
 **email:** `theZeriax@protonmail.com`
 
